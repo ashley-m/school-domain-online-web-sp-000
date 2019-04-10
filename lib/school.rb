@@ -9,7 +9,7 @@ class School
     if @roster.keys.include?(grade)
       @roster[grade] << name
     else
-      @roster[grade] => []
+      @roster[grade] = []
       @roster[grade] << name
     end
 
