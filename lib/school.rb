@@ -16,4 +16,10 @@ class School
   def grade(g)
     return @roster[g]
   end
+  def sort
+    @roster.each_key do |x|
+      @roster[x].sort!
+    end
+    return @roster
+  end
 end
